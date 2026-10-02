@@ -1,25 +1,27 @@
-import Button from '../components/Button.jsx'
-import './Header.css'
-
 export default function Header() {
   return (
-    <header className="site-header" id="top">
-      <div className="site-header__inner wrap">
-        <div className="site-header__left">
-          <a className="site-header__wordmark" href="#top">
-            Q for Developers
+    <header className="site-header">
+      <div className="site-header__inner page-wrap">
+        {/* Brand links take the visitor back to the top of the page. */}
+        <div className="site-header__brand">
+          <a className="site-header__logo" href="#top" aria-label="Q for Developers home">
+            Q
           </a>
-
-          <nav className="site-header__nav" aria-label="Main">
-            <a href="#capabilities">Capabilities</a>
-            <a href="#how-it-works">How it works</a>
-          </nav>
+          <span className="site-header__company">Presto Ghana</span>
         </div>
 
-        <Button href="#early-access" size="sm" className="site-header__button">
-          <span className="label-long">Request early access</span>
-          <span className="label-short">Request access</span>
-        </Button>
+        {/* These links jump to page sections with matching IDs. */}
+        <nav className="site-header__nav" aria-label="Main navigation">
+          <a href="#capabilities">Capabilities</a>
+          <a href="#how-it-works">How it works</a>
+          <a href="#docs">Docs</a>
+        </nav>
+
+        {/* The main button takes visitors to the access request form. */}
+        <div className="site-header__actions">
+          <a className="button button--small" href="#early-access">Request Early Access</a>
+          <span className="site-header__avatar" aria-label="Profile">P</span>
+        </div>
       </div>
     </header>
   )
