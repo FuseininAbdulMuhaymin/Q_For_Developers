@@ -9,8 +9,9 @@ import Button from './components/Button.jsx'
 export default function App() {
   return (
     <div className="site-shell">
+      <a className="skip-link" href="#main">Skip to content</a>
       <Header />
-      <main id="top">
+      <main id="main">
         <Hero />
         <Capabilities />
         <HowItWorks />

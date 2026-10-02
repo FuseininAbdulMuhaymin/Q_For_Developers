@@ -1,9 +1,32 @@
 import './Button.css'
 
-export default function Button({children,className = '',disabled = false,loading = false,size = 'default',type = 'button',...props}) {
-  const classes = ['button', size === 'small' && 'button--small', className]
+export default function Button({
+  children,
+  className = '',
+  disabled = false,
+  href,
+  loading = false,
+  size = 'default',
+  type = 'button',
+  ...props
+}) {
+  const classes = ['button', (size === 'small' || size === 'sm') && 'button--small', className]
     .filter(Boolean)
     .join(' ')
+
+  if (href) {
+    return (
+      <a
+        {...props}
+        className={classes}
+        href={disabled ? undefined : href}
+        aria-disabled={disabled || undefined}
+        tabIndex={disabled ? -1 : props.tabIndex}
+      >
+        {children}
+      </a>
+    )
+  }
 
   return (
     <button
