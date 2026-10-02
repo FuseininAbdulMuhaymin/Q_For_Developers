@@ -1,3 +1,0 @@
-export default function CodeBlock() {
-  return <div className="code-card"><div className="code-head"><span><i /><i /><i /></span><small>quickstart.js</small><b>JS</b></div><pre><span className="code-purple">const</span> q = <span className="code-green">new</span> Q({'\n'}  apiKey: <span className="code-yellow">'q_live_••••'</span>{'\n'}){'\n\n'}<span className="code-purple">const</span> order = <span className="code-pink">await</span> q.orders.<span className="code-blue">create</span>({'\n'}  {'{'} item: <span className="code-yellow">'your next idea'</span> {'}'} {'\n'})</pre><div className="code-foot"><span><i /> Connected to sandbox</span><span>200 OK</span></div></div>
-}
