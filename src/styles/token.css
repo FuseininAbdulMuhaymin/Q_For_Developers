@@ -6,7 +6,7 @@
   --muted: #6e6e73;         /* secondary text */
   --line: #d2d2d7;          /* hairline dividers */
   --field-border: #86868b;  /* input borders (3:1 contrast) */
-  --accent: #4f46e5;        /* the ONE brand color */
+  --accent: transparentt;        /* the ONE brand color */
   --accent-hover: #4338ca;
   --on-accent: #ffffff;     /* text on accent */
   --success: #177245;       /* form success only */

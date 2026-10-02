@@ -151,9 +151,9 @@ a {
   cursor: pointer;
 }
 
-.button:hover {
+/* .button:hover:not(:disabled):not([aria-disabled='true']) {
   background: var(--accent-hover);
-}
+} */
 
 .button:disabled {
   cursor: wait;
@@ -170,7 +170,7 @@ a {
   color: var(--text);
 }
 
-.button--secondary:hover {
+.button--secondary:hover:not(:disabled):not([aria-disabled='true']) {
   background: #222a3d;
 }
 
@@ -256,7 +256,7 @@ a {
 /* Code card makes the sample request look like a small terminal window. */
 .code-card {
   overflow: hidden;
-  border: 1px solid rgb(144 143 160 / 30%);
+  border: 4px solid rgb(144 143 160 / 30%);
   border-radius: 14px;
   background: var(--surface-code);
   box-shadow: 0 24px 60px rgb(0 0 0 / 25%);
@@ -271,7 +271,7 @@ a {
   gap: 12px;
   padding: 0 16px;
   background: var(--surface-raised);
-  font: 10px var(--font-mono);
+  font: 15px var(--font-mono);
 }
 
 .code-card__top {
@@ -304,10 +304,11 @@ a {
 
 .copy-button {
   border: 0;
-  background: transparent;
+  background:var(--surface);
   color: var(--muted);
   font: inherit;
   cursor: pointer;
+  border-radius:5px;
 }
 
 .copy-button:hover { color: var(--text); }

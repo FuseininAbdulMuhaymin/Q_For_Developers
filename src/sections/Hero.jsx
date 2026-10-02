@@ -40,8 +40,8 @@ export default function Hero() {
             <a className="button button--secondary" href="#docs">Explore Docs</a>
           </div>
           <div className="hero-benefits">
-            <span><b aria-hidden="true">✓</b> Zero latency edge routing</span>
-            <span><b aria-hidden="true">✓</b> Sandbox instant provisioning</span>
+            <span><b aria-hidden="true"></b> Zero latency edge routing</span>
+            <span><b aria-hidden="true"></b> Sandbox instant provisioning</span>
           </div>
         </div>
 
@@ -50,11 +50,11 @@ export default function Hero() {
             <div className="code-card__dots" aria-hidden="true"><i /><i /><i /></div>
             <span>POST /v1/mcp/connect</span>
             <button className="copy-button" type="button" onClick={copyCode}>
-              {copied ? 'Copied' : 'Copy code'}
+              {copied ? 'Copied' : 'Copycode'}
             </button>
           </div>
           <pre><code>{codeExample}</code></pre>
-          <div className="code-card__bottom"><span>● &nbsp;200 OK (14ms)</span><span>JSON</span></div>
+          <div className="code-card__bottom"><span>200 OK (14ms)</span><span>JSON</span></div>
         </div>
       </div>
     </section>

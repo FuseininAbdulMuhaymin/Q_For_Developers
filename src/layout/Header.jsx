@@ -7,7 +7,7 @@ export default function Header() {
           <a className="site-header__logo" href="#top" aria-label="Q for Developers home">
             Q
           </a>
-          <span className="site-header__company">Presto Ghana</span>
+          <span className="site-header__company">Q for developers</span>
         </div>
 
         {/* These links jump to page sections with matching IDs. */}

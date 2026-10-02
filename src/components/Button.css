@@ -18,16 +18,17 @@
   transition: background-color 150ms ease, transform 150ms ease;
 }
 
-.button:hover:not(:disabled) {
+.button:hover:not(:disabled):not([aria-disabled='true']) {
   background: var(--accent-hover);
   text-decoration: none;
 }
 
-.button:active:not(:disabled) {
+.button:active:not(:disabled):not([aria-disabled='true']) {
   transform: translateY(1px);
 }
 
-.button:disabled {
+.button:disabled,
+.button[aria-disabled='true'] {
   opacity: 0.6;
   cursor: not-allowed;
 }
