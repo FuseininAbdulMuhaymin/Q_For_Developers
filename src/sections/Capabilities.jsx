@@ -1,5 +1,5 @@
 import { capabilities } from '../data/capabilities.js'
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Capabilities() {
   return (
     // Read the feature cards from a list so we do not repeat the same markup.
@@ -13,7 +13,9 @@ export default function Capabilities() {
         <div className="card-grid">
           {capabilities.map((capability) => (
             <article className="feature-card" key={capability.number}>
-              <div className="feature-card__icon" aria-hidden="true">{capability.icon}</div>
+              <div className="feature-card__icon" aria-hidden="true">
+                <FontAwesomeIcon icon={capability.icon} />
+              </div>
               <h3>{capability.title}</h3>
               <p>{capability.description}</p>
               <a href="#docs">{capability.link} <span aria-hidden="true">→</span></a>
